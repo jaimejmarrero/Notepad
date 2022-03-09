@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="main.notepad.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0"/>
+    </padding>
+
+    <MenuBar fx:id="menuBar">
+        <menus>
+            <Menu text="File">
+                <items>
+                    <MenuItem text="Open" onAction="#onOpenClick"/>
+                    <MenuItem text="Save" onAction="#onSaveClick"/>
+                </items>
+            </Menu>
+        </menus>
+    </MenuBar>
+
+    <TextArea fx:id="textInput">
+
+    </TextArea>
+</VBox>
+
